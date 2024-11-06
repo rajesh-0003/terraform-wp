@@ -1,5 +1,5 @@
-resource "aws_security_group" "vinaysg" {
-  vpc_id = aws_vpc.vinayvpc.id
+resource "aws_security_group" "rajeshsg" {
+  vpc_id = aws_vpc.rajeshvpc.id
 
   # Inbound rules
   ingress {
@@ -32,6 +32,6 @@ resource "aws_security_group" "vinaysg" {
   }
 
   tags = {
-    Name = "wp SG"
+    Name = "py SG"
   }
 }
