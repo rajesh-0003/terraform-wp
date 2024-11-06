@@ -2,11 +2,11 @@
 provider "aws" {
   region     = "us-east-1"
 }
-resource "aws_vpc" "vinayvpc" {
-  cidr_block       = var.vinayvpc_cidr
+resource "aws_vpc" "rajeshvpc" {
+  cidr_block       = var.rajeshvpc_cidr
   instance_tenancy = "default"
 
   tags = {
-    Name = "vinayvpc"
+    Name = "rajeshvpc"
   }
 }
