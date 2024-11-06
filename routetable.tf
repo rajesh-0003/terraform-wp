@@ -37,12 +37,12 @@ resource "aws_route_table_association" "rajrt4" {
 
 # Associating route table with the 5th subnet
 resource "aws_route_table_association" "rajrt5" {
- subnet_id      = aws_subnet.rajsubnet5.id
+ subnet_id      = aws_subnet.rajpsubnet5.id
   route_table_id = aws_route_table.rajeshroute.id
 }
 
 # Associating route table with the 6th subnet
 resource "aws_route_table_association" "rajrt6" {
-  subnet_id      = aws_subnet.rajsubnet6.id
+  subnet_id      = aws_subnet.rajpsubnet6.id
   route_table_id = aws_route_table.rajeshroute.id
 }
