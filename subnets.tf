@@ -49,7 +49,7 @@ map_public_ip_on_launch = true
 # Creating the first database private subnet
 resource "aws_subnet" "rajpsubnet5" {
   vpc_id                  = aws_vpc.rajeshvpc.id
-  cidr_block              = var.rajsubnet5_cidr
+  cidr_block              = var.rajpsubnet5_cidr
   map_public_ip_on_launch = false
   availability_zone       = "us-east-1e"
 
@@ -61,11 +61,11 @@ resource "aws_subnet" "rajpsubnet5" {
 # Creating the second database private subnet
 resource "aws_subnet" "rajpsubnet6" {
   vpc_id                  = aws_vpc.rajeshvpc.id
-  cidr_block              = var.rajsubnet6_cidr
+  cidr_block              = var.rajpsubnet6_cidr
   map_public_ip_on_launch = false
   availability_zone       = "us-east-1f"
 
   tags = {
-    Name = "rajpsubnet5"
+    Name = "rajpsubnet6"
   }
 }
