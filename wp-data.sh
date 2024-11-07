@@ -6,4 +6,4 @@ git clone https://github.com/rajesh-0003/MyFuel.git
 sudo mv MyFuel/ /home/ec2-user/
 cd /home/ec2-user/MyFuel
 pip3 install -r requirements.txt
-python3 app.py
+screen -m -d python3 app.py
